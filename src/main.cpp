@@ -96,6 +96,7 @@ void moveRobot(float Desired_distance){
 	pros::delay(3000);
 	imu.set_heading(0);
 		
+	// the loop of action
 	while (true) {
 	
 		float position = (Rightfront.get_position() + Rightback.get_position() + Leftback.get_position() + Leftfront.get_position()) / 4.0;
